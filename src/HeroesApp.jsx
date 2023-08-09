@@ -1,11 +1,14 @@
 import { AppRouter } from './router/AppRouter';
+import LoadingPage from './class/pages/LoadingPage';
 
 
 export const HeroesApp = () => {
   return (
     <>
         
-        <AppRouter />
+        <>
+       { loading ? <LoadingPage /> :  <AppRouter />}
+    </>
 
     </>
   )
